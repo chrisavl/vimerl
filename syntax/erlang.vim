@@ -47,7 +47,7 @@ syn match   erlangOperator                   /->\|<-\|||\||\|!\|=/
 syn match   erlangOperator                   /=:=\|==\|\/=\|=\/=\|<\|>\|=<\|>=/
 syn keyword erlangOperator                   div rem
 
-syn region erlangString                      start=/"/ end=/"/ skip=/\\/ contains=@Spell,erlangStringModifier
+syn region erlangString                      start=/"/ end=/"/ skip=/\\/ contains=erlangStringModifier
 
 syn match erlangVariable                     /\<[A-Z_]\w*\>/
 syn match erlangAtom                         /\%(\%(^-\)\|#\)\@<!\<[a-z][A-Za-z0-9_]*\>\%(\s*[(:]\)\@!/
